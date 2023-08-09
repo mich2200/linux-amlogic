@@ -172,8 +172,6 @@ config DVB_TAS2971
 	help
 	Say Y when you want to support this frontend.
 
-source "drivers/media/dvb-frontends/stid135/Kconfig"
-
 comment "Multistandard (cable + terrestrial) frontends"
 	depends on DVB_CORE
 
@@ -644,8 +642,6 @@ config DVB_ZL10353
 	help
 	  A DVB-T tuner module. Say Y when you want to support this frontend.
 
-source "drivers/media/dvb-frontends/cxd2880/Kconfig"
-
 comment "DVB-C (cable) frontends"
 	depends on DVB_CORE
 
@@ -1064,8 +1060,6 @@ config DVB_TDA665x
 
 	  Currently supported tuners:
 	  * Panasonic ENV57H12D5 (ET-50DT)
-
-source "drivers/media/dvb-frontends/drx39xyj/Kconfig"
 
 comment "Multistandard (satellite + cable + terrestrial) frontends"
 	depends on DVB_CORE
